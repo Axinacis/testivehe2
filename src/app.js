@@ -21,7 +21,7 @@ app.get('/about', (req, res) => {
 app.get('/weather', (req, res) => {
   if (!req.query.address) {
     return res.send({
-      error: 'Virhelöinen tapahtunut on, osoitteloinen puuttuvi'
+      error: 'Virhelöinen tapahtunut on, paikkeloinen pitäisi ollak'
     })
   }
   geocode(req.query.address, (error, {latitude, longitude, location} = {}) => {
@@ -40,6 +40,7 @@ app.get('/weather', (req, res) => {
     })
   })
 })
+
 
 app.get('*', (req, res) => {
   res.redirect('/');
