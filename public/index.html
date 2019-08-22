@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<link href="style.css" type="text/css" rel="stylesheet">
 	
 	<head>
 		<meta charset="UTF-8">
-		<title>Weather</title>
+		<title>Sääripellys McJonkunnäkönen</title>
 	</head>
 	
 	<body>
-		<h1>Sääsovellus</h1>
-		<p>Anna osoite, saat säätiedotuksen.</p>
-		<form>
-			<input placeholder='Paikka'>
-			<button>Etsi</button>
-		</form>
-		<p id="message1"></p>
-		<p id="message2"></p>
-		
+		<div class="containerAll">
+			<div class="container1">
+				<h1>Sääripellys v1</h1>
+				<p id="rivi">Anna osoite, saat säätiedotuksen.</p>
+				<form>
+					<input placeholder='Paikka'>
+					<button>Zäp</button>
+				</form>
+				
+				
+				
+			</div>
+			<div class="container2">
+				<p id="message1"></p>
+				<p id="message2"></p>
+			</div>
+		</div>
 		<script src="app.js"></script>
 	</body>
 </html>
